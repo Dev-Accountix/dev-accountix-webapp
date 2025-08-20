@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth scroll for in-page anchors */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Offset for sticky header so sections don't hide behind navbar */
+[id] {
+  scroll-margin-top: 96px; /* navbar height */
+}
+body {
+  height: 100%;
+}
+body {
+  @apply text-white bg-slate-950;
+  background: radial-gradient(
+      60rem 40rem at 20% -10%,
+      rgba(47, 128, 237, 0.25),
+      transparent 50%
+    ),
+    radial-gradient(
+      60rem 40rem at 90% 10%,
+      rgba(86, 204, 242, 0.25),
+      transparent 50%
+    ),
+    #0b1220;
+}
+
+.container-pro {
+  @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+}
+.glass {
+  @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #56ccf2, #2f80ed, #56ccf2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: bg-pan 8s ease infinite;
+}
